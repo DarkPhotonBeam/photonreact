@@ -26,10 +26,10 @@ Say your index.html looks something like this:
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./lib/photonreact/photonreact.min.js"></script>
     <script defer src="./js/index.js"></script>
-    <title>Document</title>
+    <title>PhotonReact App</title>
 </head>
 <body>
-    <h1>My new PhotonReact-App</h1>
+    <h1>My new PhotonReact app</h1>
     <span>Current time:</span>
     <button id="time-btn">Refresh Time</button>
 </body>
