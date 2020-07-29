@@ -43,7 +43,7 @@ First we need to add a placeholder in the html where we want the time variable/s
 
 In text we use ``${{stateName}}`` to tell PhotonReact where to insert which state. 
 
-First let's create an ``index.js`` file. Now let's add some code to make ``body`` the PhotonReact root:
+Now let's create an ``index.js`` file. Now let's add some code to make ``body`` the PhotonReact root:
 
 ```javascript
 let pr = new PhotonReact();
