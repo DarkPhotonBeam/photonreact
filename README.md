@@ -23,6 +23,9 @@ Say your index.html looks something like this:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./lib/photonreact/photonreact.min.js"></script>
+    <script defer src="./js/index.js"></script>
     <title>Document</title>
 </head>
 <body>
