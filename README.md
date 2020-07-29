@@ -91,6 +91,8 @@ class Root extends PRRoot {
 }       );
     }
 }
+
+new Root();
 ```
 
 As you can see we add an event listener just how we normally do, just this time in the constructor so we can access the state of the app. Now our app refreshes the time everytime we press the button.
