@@ -11,6 +11,8 @@ class PRRoot {
         this.state = {};
         this.dom[0].prComp = this;
         this.stateBehaviorOverrides = {};
+        this.routes = {};
+        this.templates = {};
 
 
         // Register Events
@@ -51,6 +53,44 @@ class PRRoot {
         this.refreshClasses();
         this.refreshAttributes();
         this.refreshSrc();
+        this.registerRoutes();
+    }
+
+    registerRoutes() {
+        let links = $('.pr-link');
+        let linksObj = {};
+        links.toArray().map((item, i) => {
+            linksObj[item.getAttribute('data-pr-href').slice(1)] = $(item);
+        });
+        links.click((e) => {
+            let href = e.target.getAttribute('data-pr-href');
+            if (href.indexOf('http') !== -1) {
+                let win = window.open('', '_blank')
+                win.location.href = href;
+            } else {
+                location.hash = href;
+                this.loadRoute();
+            }
+        });
+
+        let routes = $('.pr-route');
+        routes.hide();
+        routes.toArray().map((item, i) => {
+            let identifier = item.getAttribute('data-pr-route').slice(1)
+            let link = linksObj[identifier];
+            this.routes[identifier] = {
+                route: $(item),
+                link: link
+            };
+        });
+        this.loadRoute();
+    }
+
+    loadRoute() {
+        $('.pr-route').hide();
+        $('.pr-link').removeClass('pr-link-active');
+        this.routes[location.hash.slice(2)].link.addClass('pr-link-active');
+        this.routes[location.hash.slice(2)].route.fadeIn(750);
     }
 
     setState(state) {
