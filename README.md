@@ -73,7 +73,7 @@ new Root();
 
 Now our webpage should look something like this in the browser:
 
-![page 01](https://imgur.com/a/J2tFXao)
+![page 01](./README_MEDIA/screen01.PNG)
 
 Nothing is happening yet when we press the button though so let's change that:
 
