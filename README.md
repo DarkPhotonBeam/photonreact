@@ -174,7 +174,7 @@ Sometimes the way PhotonReact displays your states might not be enough for you; 
 
 To override the behaviour of a state you need to create a function and map it to the desired state:
 
-```
+```javascript
 class Root extends PRRoot {
     constructor(prInstance, selector) {
         super(prInstance, selector);
