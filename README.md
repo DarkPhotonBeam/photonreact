@@ -68,14 +68,14 @@ Now to use state we need to add two lines of code:
 let pr = new PhotonReact();
 
 class Root extends PRRoot {
-    constructor() {
-        super(pr, 'body'); // We need to give PRRoot a PhotonReact instance and a selector
+    constructor(prInstance, selector) {
+        super(prInstance, selector); // We need to give PRRoot a PhotonReact instance and a selector
         this.state = {time: new Date().toString()}; // Setting a new state named time and assigned it the value of the current time in string format
         this.prepareStates(); // Detect placeholders and filling in the states
     }
 }
 
-new Root();
+new Root(pr, 'body');
 ```
 
 Now our webpage should look something like this in the browser:
@@ -88,8 +88,8 @@ Nothing is happening yet when we press the button though so let's change that:
 let pr = new PhotonReact();
 
 class Root extends PRRoot {
-    constructor() {
-        super(pr, 'body'); // We need to give PRRoot a PhotonReact instance and a selector
+    constructor(prInstance, selector) {
+        super(prInstance, selector); // We need to give PRRoot a PhotonReact instance and a selector
         this.state = {time: new Date().toString()}; // Setting a new state named time and assigned it the value of the current time in string format
         this.prepareStates(); // Detect placeholders and filling in the states
 
@@ -99,7 +99,7 @@ class Root extends PRRoot {
     }
 }
 
-new Root();
+new Root(pr, 'body');
 ```
 
 As you can see we add an event listener just how we normally do, just this time in the constructor so we can access the state of the app. Now our app refreshes the time everytime we press the button.
