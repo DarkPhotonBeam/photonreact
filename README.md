@@ -6,9 +6,13 @@ Sometimes a framework like React.js or Vue.js ist just a bit of an overkill for 
 
 To use PhotonReact you first have to download the latest photonreact.js file. Keep in mind that photonreact needs jquery to run, so be sure to download and include it before photonreact.js. Like so:
 ```html
-<script src="path/to/jquery.min.js"></script>
-<script src="path/to/photonreact.min.js"></script>
-<script defer src="path/to/your/index.js"></script>
+<head>
+    ...
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/photonreact.min.js"></script>
+    <script defer src="path/to/your/index.js"></script>
+    ...
+</head>
 ```
 
 So how do I get it to run now? First we need to take a look at the HTML-Side of things.
