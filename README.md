@@ -1,6 +1,6 @@
 # PhotonReact - A lightweight state library for small web apps
 
-Sometimes a framework like React.js or Vue.js ist just a bit of an overkill for your project. This is where PhotonReact fills the hole. It makes managing states a little more bearable while being a very small library.
+Sometimes a framework like React.js or Vue.js ist just a bit of an overkill for your project. This is where PhotonReact fills the gap. It makes managing states a little more bearable while being a very small library.
 
 ## Getting Started
 
