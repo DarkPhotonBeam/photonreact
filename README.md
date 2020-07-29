@@ -52,12 +52,12 @@ Now let's create an ``index.js`` file and add some code to make ``body`` the Pho
 let pr = new PhotonReact();
 
 class Root extends PRRoot {
-    constructor() {
-        super(pr, 'body'); // We need to give PRRoot a PhotonReact instance and a selector
+    constructor(prInstance, selector) {
+        super(prInstance, selector); // We need to give PRRoot a PhotonReact instance and a selector
     }
 }
 
-new Root(); // Initalize Root
+new Root(pr, 'body'); // Initalize Root
 ```
 
 Don't forget to create the Root instance.
