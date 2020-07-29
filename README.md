@@ -104,6 +104,10 @@ As you can see we add an event listener just how we normally do, just this time 
 
 Of course this is just a basic example of what you can do with PhotonReact, to learn more visit the documentation.
 
+## Current Limitations
+
+* The nesting of PRRoots is not possible and will cause errors, it is advised to use PRRoots on main elements.
+
 ## Documentation
 
 ### States
