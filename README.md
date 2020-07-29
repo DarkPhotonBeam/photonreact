@@ -40,7 +40,7 @@ Let's say after ``Current time:`` you want to display the current time, and refr
 
 First we need to add a placeholder in the html where we want the time variable/state to be:
 
-```
+```html
     <span>Current time: ${{time}}</span>
 ```
 
