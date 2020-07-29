@@ -8,6 +8,7 @@ To use PhotonReact you first have to download the latest photonreact.js file. Ke
 ```html
 <script src="path/to/jquery.min.js"></script>
 <script src="path/to/photonreact.min.js"></script>
+<script defer src="path/to/your/index.js"></script>
 ```
 
 So how do I get it to run now? First we need to take a look at the HTML-Side of things.

@@ -1,4 +1,3 @@
-//
 
 class PRRoot {
     constructor(rootInstance, selector) {
